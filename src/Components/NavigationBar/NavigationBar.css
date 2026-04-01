@@ -1,0 +1,26 @@
+.navbar {
+    background-color: rgba(27, 166, 154, 0.25); /* #1ba69a ghost */
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    border-bottom: 1px solid rgba(27, 166, 154, 0.25);
+}
+
+.navbar .navbar-toggler {
+    border-color: white;
+}
+
+.navbar .navbar-toggler-icon,
+.navbar .navbar-brand img {
+    filter: invert();
+}
+
+.navbar .navbar-brand img {
+    transform: rotate(45deg);
+    width: 1.5rem;
+}
+
+@media screen and (max-width: 576px) {
+    .navbar {
+        background-color: var(--secondary-bg-color);
+    }
+}
